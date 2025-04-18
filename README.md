@@ -121,7 +121,7 @@ Triggers on any push
 
 5. Runs tests with pytest
 
-🏁 Try It Yourself
+# 🏁 Try It Yourself
 1. Fork or clone the repo.
 
 2. Push a change to calculator.py or test_calculator.py.
