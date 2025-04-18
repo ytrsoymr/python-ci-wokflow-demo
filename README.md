@@ -105,3 +105,18 @@ This installs all the project dependencies specified in your requirements.txt fi
       pytest
 ```
 This executes your Python tests using pytest.
+
+## 💡 Summary:
+# This workflow:
+
+Triggers on any push
+
+Runs a job on Ubuntu
+
+Checks out your code
+
+Sets up Python 3.10
+
+Installs dependencies from requirements.txt
+
+Runs tests with pytest
