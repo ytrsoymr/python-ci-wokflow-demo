@@ -45,8 +45,7 @@ jobs:
 ```
 
 File Header
-```
-yaml
+```yaml
 
 name: Python Application
 ```
