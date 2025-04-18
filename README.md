@@ -106,8 +106,8 @@ This installs all the project dependencies specified in your requirements.txt fi
 ```
 This executes your Python tests using pytest.
 
-## 💡 Summary:
-# This workflow:
+# 💡 Summary:
+## This workflow:
 
 Triggers on any push
 
