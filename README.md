@@ -42,3 +42,58 @@ jobs:
       - name: Run tests
         run: |
           pytest
+```
+
+File Header
+```
+yamlname: Python Application
+```
+This sets "Python Application" as the display name for the workflow in the GitHub Actions UI.
+Trigger Configuration
+```yamlon: [push]
+This workflow runs whenever code is pushed to any branch in the repository.
+```
+Alternative Trigger Example
+You could limit the workflow to specific branches:
+```yamlon:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+```
+This would run the workflow only on pushes or pull requests to the main branch.
+Job Configuration
+```yamljobs:
+  build:
+    runs-on: ubuntu-latest
+```
+jobs contains all the jobs that will run in this workflow
+build is the name for this specific job
+The job runs on the latest Ubuntu virtual machine environment provided by GitHub
+
+# Workflow Steps
+## 1. Checkout Code
+```yamlsteps:
+  - name: Checkout code
+    uses: actions/checkout@v3
+```
+This step pulls the code from your repository, making it available to subsequent steps.
+## 2. Set up Python
+```yaml  - name: Set up Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.10'
+```
+This configures Python 3.10 on the runner environment.
+## 3. Install Dependencies
+```yaml  - name: Install dependencies
+    run: |
+      pip install -r requirements.txt
+```
+This installs all the project dependencies specified in your requirements.txt file.
+## 4. Run Tests
+```yaml  - name: Run tests
+    run: |
+      pytest
+```
+This executes your Python tests using pytest.
