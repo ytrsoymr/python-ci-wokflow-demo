@@ -111,12 +111,22 @@ This executes your Python tests using pytest.
 
 Triggers on any push
 
-Runs a job on Ubuntu
+1. Runs a job on Ubuntu
 
-Checks out your code
+2. Checks out your code
 
-Sets up Python 3.10
+3. Sets up Python 3.10
 
-Installs dependencies from requirements.txt
+4. Installs dependencies from requirements.txt
 
-Runs tests with pytest
+5. Runs tests with pytest
+
+🏁 Try It Yourself
+1. Fork or clone the repo.
+
+2. Push a change to calculator.py or test_calculator.py.
+
+3. Go to the Actions tab on GitHub.
+
+4. See your workflow running automatically!
+
